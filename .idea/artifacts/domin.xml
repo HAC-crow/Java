@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="domin">
+    <output-path>$PROJECT_DIR$/out/artifacts/domin</output-path>
+    <root id="archive" name="domin.jar">
+      <element id="directory" name="test" />
+    </root>
+  </artifact>
+</component>

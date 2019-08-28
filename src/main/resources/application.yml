@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    #    url: jdbc:mysql://39.106.115.159:3307/chinatelecom?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/lunz?useSSL=false&serverTimezone=GMT%2B8
+    #    url: jdbc:mysql://localhost:3306/chinatelecom?useUnicode=true&characterEncoding=UTF-8&allowMultiQueriallowMultiQueries=truees=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 3306
+#    password: root
+
+server:
+  port: 8888
+logging:
+  level:
+    root: warn
+    MpTest.dao: trace
+  pattern:
+    console: '%p%m%n'
+mybatis-plus:
+  #  mapper-locations: classpath:com/DR/Profile/dao/mapping/*.xml
+  mapper-locations: test/dao/mapping/*.xml
+  type-aliases-package: test.pojo

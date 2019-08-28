@@ -19,7 +19,6 @@ public class MenuController {
     @GetMapping("/getmenu1")
     @ResponseBody
     public List getmenu1(){
-        System.out.println(menuServiceImpl.getmenu1());
         return menuServiceImpl.getmenu1();
     }
 }

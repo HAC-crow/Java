@@ -2,25 +2,43 @@ package test.dtos;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 
-@TableName("menu1")
+@TableName("MENULIST")
 public class Menu {
-    private int id;
+    private int ID;
+    private String SUBMENU;
+    private int  PID;
 
-    public int getId() {
-        return id;
+    public int getID() {
+        return ID;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
-    public String getValue() {
-        return value;
+    public String getSUBMENU() {
+        return SUBMENU;
     }
 
-    public void setValue(String value) {
-        this.value = value;
+    public void setSUBMENU(String SUBMENU) {
+        this.SUBMENU = SUBMENU;
     }
 
-    private String value;
+    public int getPID() {
+        return PID;
+    }
+
+    public void setPID(int PID) {
+        this.PID = PID;
+    }
+
+    public String getMENU() {
+        return MENU;
+    }
+
+    public void setMENU(String MENU) {
+        this.MENU = MENU;
+    }
+
+    private String MENU;
 }

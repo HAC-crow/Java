@@ -18,7 +18,7 @@ public class MenuServiceImpl implements MenuService {
     @Autowired
     private MenuMapper menuMapper;
     @Override
-    public List getmenu1() {
+    public List getmenu() {
         QueryWrapper<Menu> queryWrapper = new QueryWrapper<>();
         queryWrapper.select("pid","menu").groupBy("pid","menu");
         List<Map<String, Object>> list = menuMapper.selectMaps(queryWrapper);

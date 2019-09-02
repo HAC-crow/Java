@@ -16,9 +16,9 @@ public class MenuController {
     @Autowired
     private MenuServiceImpl menuServiceImpl;
 
-    @GetMapping("/getmenu1")
+    @GetMapping("/getmenu")
     @ResponseBody
-    public List getmenu1(){
-        return menuServiceImpl.getmenu1();
+    public List getmenu(){
+        return menuServiceImpl.getmenu();
     }
 }
